@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="org.dita.dost.platform.ImportAntLibAction">
+  <title><codeph>org.dita.dost.platform.ImportAntLibAction</codeph></title>
+  <shortdesc>Creates Ant <xmlelement>pathelement</xmlelement> elements for each file supplied to the
+    extension point in the plug-in descriptor file.</shortdesc>
+  <refbody>
+    <example>
+      <title><filepath conref="../resources/conref-task.dita#ID/samples-dir"
+          /><filepath>/plugins/com.extension-points.defs</filepath></title>
+      <draft-comment author="staylor">
+        <fig>
+          <title>In <filepath>plugin.xml</filepath></title>
+          <codeblock><coderef href="../samples/plugins/com.extension-points.defs/plugin.xml#line=7,9"/></codeblock>
+        </fig>
+        <fig>
+          <title>In <filepath>build_template.xml</filepath></title>
+          <codeblock><coderef href="../samples/plugins/com.extension-points.defs/build_template.xml#line=24,37"/></codeblock>
+        </fig>
+        <fig>
+          <title>In <filepath>build.xml</filepath> (after integration)</title>
+          <codeblock><coderef href="../samples/plugins/com.extension-points.defs/build.xml#line=17,25"/></codeblock>
+        </fig>
+      </draft-comment>
+    </example>
+    <section>
+      <title><codeph>dita.conductor.lib.import</codeph></title>
+      <p>Use the pre-defined <codeph>dita.conductor.lib.import</codeph> extension point to add Java
+        libraries to the DITA-OT <parmname>classpath</parmname> parameter.</p>
+    </section>
+  </refbody>
+</reference>

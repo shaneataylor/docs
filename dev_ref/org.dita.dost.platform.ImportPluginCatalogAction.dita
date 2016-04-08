@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="org.dita.dost.platform.ImportPluginCatalogAction">
+  <title><codeph>org.dita.dost.platform.ImportPluginCatalogAction</codeph></title>
+  <shortdesc>Include plug-in metadata catalog content.</shortdesc>
+  <refbody>
+    <section>
+      <draft-comment author="staylor">
+        <simpletable relcolwidth="33* 33*">
+          <sthead>
+            <stentry id="stentry_er1_">dita-ot-2.2.0 example File</stentry>
+            <stentry id="stentry_fr1_">ID</stentry>
+          </sthead>
+          <strow>
+            <stentry id="stentry_sr1_"><!-- <xref
+                href="../../distros/dita-ot-2.2.0/catalog-dita_template.xml"
+                >catalog-dita_template.xml</xref> --></stentry>
+            <stentry id="stentry_tr1_">dita.catalog.plugin-info</stentry>
+          </strow>
+        </simpletable>
+      </draft-comment>
+      <required-cleanup><!--<xref
+          href="../../dita-ot/src/main/java/org/dita/dost/platform/ImportPluginCatalogAction.java"
+          >ImportPluginCatalogAction.java</xref>--></required-cleanup>
+    </section>
+  </refbody>
+</reference>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<task id="plugin-newextensions-future-dependencies">
+    <title>Include extension point dependencies in the processing pipeline</title>
+    <shortdesc/>
+    <taskbody>
+    <section>
+      <title>Defining extension points for future processing</title>
+      <draft-comment author="staylor">give ability for other plugins to extend processing at points
+        during the pipeline of your plugin. best practice to add pre- and post- processing extension
+        points</draft-comment>
+      <draft-comment author="staylor"><xmlelement>target</xmlelement> needs to use
+          <xmlatt>dita:depends</xmlatt> and <xmlatt>dita:extension</xmlatt>
+        attributes</draft-comment>
+      <parml>
+        <plentry>
+          <pt><xmlatt>dita:depends</xmlatt></pt>
+          <pd>
+            <draft-comment author="staylor">use instead of <xmlatt>depends</xmlatt> to specify
+              extension point dependencies for integration.</draft-comment>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt><xmlatt>dita:extension</xmlatt></pt>
+          <pd>
+            <p>The <xmlatt>dita:extension</xmlatt> attribute is used to process attributes in
+              elements which are not in template extension namespace. The value of the attribute is
+              a space delimited tuple, where the first item is the name of the attribute to process
+              and the second item is the action ID.</p>
+            <p>Supported values:</p>
+            <dl>
+              <dlentry>
+                <dt><codeph>depends org.dita.dost.platform.InsertDependsAction</codeph></dt>
+                <dd>Ant target dependency list is processed to replace all target names which start
+                  with an open curly bracket and end with a close curly bracket. The value of the
+                  extension point is the ID between the curly brackets.</dd>
+              </dlentry>
+            </dl>
+          </pd>
+        </plentry>
+      </parml>
+    </section>
+    </taskbody>
+</task>

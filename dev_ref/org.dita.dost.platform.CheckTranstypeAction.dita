@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="org.dita.dost.platform.CheckTranstypeAction">
+  <title><codeph>org.dita.dost.platform.CheckTranstypeAction</codeph></title>
+  <shortdesc>Compares an Ant property value against a list of values supplied to the extension point
+    in the plug-in descriptor file.</shortdesc>
+  <refbody>
+    <section>
+      <p>This action expands to a series of <xmlelement>not</xmlelement> tests—one for each value
+        supplied to the extension point—and returns a true value if the Ant property value does
+          <i>not</i> match any of the values.</p>
+      <ul>
+        <li>Specify the name of the Ant property value to check with the <xmlatt>property</xmlatt>
+            attribute.<p>If omitted, the <parmname>transtype</parmname> property is
+          checked.</p></li>
+        <li>Specify the values for the extension point with the <xmlelement>feature</xmlelement>
+          element in the plug-in descriptor file.</li>
+      </ul>
+    </section>
+    <refbodydiv id="transtype_common">
+      <example>
+        <title><filepath conref="../resources/conref-task.dita#ID/samples-dir"
+            /><filepath>/plugins/com.extension-points.defs</filepath></title>
+        <fig>
+          <title>In <filepath>plugin.xml</filepath></title>
+          <codeblock><coderef href="../samples/plugins/com.extension-points.defs/plugin.xml#line=7,9"/></codeblock>
+        </fig>
+        <fig>
+          <title>In <filepath>build_template.xml</filepath></title>
+          <codeblock><coderef href="../samples/plugins/com.extension-points.defs/build_template.xml#line=24,37"/></codeblock>
+        </fig>
+        <fig>
+          <title>In <filepath>build.xml</filepath> (after integration)</title>
+          <codeblock><coderef href="../samples/plugins/com.extension-points.defs/build.xml#line=17,25"/></codeblock>
+        </fig>
+      </example>
+      <section id="dita.conductor.transtype.check">
+        <title><codeph>dita.conductor.transtype.check</codeph></title>
+        <p>Use the pre-defined extension point <codeph>dita.conductor.transtype.check</codeph>
+          either to list the available transformation types or test a property value against the
+          available transformation types, depending on the <xmlatt>behavior</xmlatt> attribute.</p>
+        <ul>
+          <li>List transformation
+            types:<codeblock>&lt;dita:extension id="dita.conductor.transtype.check" 
+  behavior="<parmname keyref="org.dita.dost.platform.ListTranstypeAction"/>"/></codeblock></li>
+          <li>Test property against transformation
+            types:<codeblock>&lt;dita:extension id="dita.conductor.transtype.check" 
+  behavior="<parmname keyref="org.dita.dost.platform.CheckTranstypeAction"/>"
+  property="transtype"/></codeblock></li>
+        </ul>
+      </section>
+    </refbodydiv>
+  </refbody>
+</reference>

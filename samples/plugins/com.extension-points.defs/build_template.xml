@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns:dita="http://dita-ot.sourceforge.net" name="extension-points" default="main">
+  
+  <path path="resources">
+    <dita:extension id="com.extension-points.defs.resources" behavior="org.dita.dost.platform.ImportAntLibAction"/>
+    <!-- add processing to copy the resources defined in this path element -->
+  </path>
+  
+  <property name="availableTransforms"><dita:extension id="dita.conductor.transtype.check" 
+    behavior="org.dita.dost.platform.ListTranstypeAction" 
+    separator=", "/></property>
+
+  <property name="brand" value=""/>
+
+  <target name="main" dita:extension="depends org.dita.dost.platform.InsertDependsAction"
+    dita:depends="{com.extension-points.defs.pre},
+    extension-points.init,
+    {com.extension-points.defs.post}">
+    <!-- targets surrounded by braces are extension points for other plugins -->
+    
+    <!--<dita:extension id="com.example.new-extensions.content"
+      behavior="org.dita.dost.platform.InsertAction"/>-->
+    
+  </target>
+  <target name="extension-points.init">
+    <antcall target="check-brand-param"/>
+  </target>
+  
+  <target name="check-brand-param">
+    <property name="message">The supplied brand must be one of: <dita:extension 
+      id="com.extension-points.defs.brands" 
+      behavior="org.dita.dost.platform.ListTranstypeAction" 
+      separator=", "/></property>
+    <fail message="${message}">
+      <condition>
+        <and><dita:extension id="com.extension-points.defs.brands" 
+              behavior="org.dita.dost.platform.CheckTranstypeAction" 
+              property="brand"/></and>
+      </condition>
+    </fail>
+  </target>
+  
+  <!-- expands to the <param> elements (or whatever, I think) specified by plugins that extend this extension point -->
+  <dita:extension id="com.extension-points.defs.params" behavior="org.dita.dost.platform.InsertAction"/>
+  <!-- 
+org.dita.dost.platform.ImportAntLibAction
+org.dita.dost.platform.ImportCatalogActionRelative
+org.dita.dost.platform.ImportPluginCatalogAction
+org.dita.dost.platform.ImportPluginInfoAction
+org.dita.dost.platform.ImportStringsAction
+org.dita.dost.platform.ImportXSLAction
+org.dita.dost.platform.InsertAction
+org.dita.dost.platform.InsertAntActionRelative
+  -->
+  
+  
+  
+</project>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="org.dita.dost.platform.ImportXSLAction">
+  <title><codeph>org.dita.dost.platform.ImportXSLAction</codeph></title>
+  <shortdesc></shortdesc>
+  <refbody>
+    <section>
+      <parml>
+        <plentry>
+          <pt><codeph>org.dita.dost.platform.ImportXSLAction</codeph></pt>
+          <pd>Create <xmlelement>xsl:import</xmlelement> elements based on <xref
+              href="plugin-overridestyle.dita">XSLT import extension point</xref>. The
+              <xmlatt>id</xmlatt> attribute is used to define the extension point
+                ID.<required-cleanup><!-- <xref
+                href="../../dita-ot/src/main/java/org/dita/dost/platform/ImportXSLAction.java"
+                >ImportXSLAction.java</xref> --></required-cleanup></pd>
+        </plentry>
+      </parml>
+    </section>
+  </refbody>
+</reference>

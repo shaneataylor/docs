@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="org.dita.dost.platform.InsertAction">
+  <title><codeph>org.dita.dost.platform.InsertAction</codeph></title>
+  <shortdesc>Include plug-in conductor content based on <xref href="plugin-anttarget.dita"
+      format="dita">Ant import extension point</xref>. The <codeph>id</codeph> attribute is used to
+    define the extension point ID.</shortdesc>
+  <refbody>
+    <section>
+      <draft-comment author="staylor">
+        <simpletable relcolwidth="33* 33*">
+          <sthead>
+            <stentry id="stentry_exf_">dita-ot-2.2.0 example File</stentry>
+            <stentry id="stentry_gxf_">ID</stentry>
+          </sthead>
+          <strow>
+            <stentry id="stentry_azf_"><!-- <xref href="../../distros/dita-ot-2.2.0/build_template.xml"
+              scope="external">build_template.xml</xref> --></stentry>
+            <stentry id="stentry_czf_">dita.conductor.target</stentry>
+          </strow>
+          <strow>
+            <stentry id="stentry_fzf_"><!-- <xref
+                href="../../distros/dita-ot-2.2.0/catalog-dita_template.xml"
+                >catalog-dita_template.xml</xref> --></stentry>
+            <stentry id="stentry_hzf_">dita.specialization.catalog</stentry>
+          </strow>
+          <strow>
+            <stentry id="stentry_szf_"><!-- <xref
+                href="../../distros/dita-ot-2.2.0/plugins/org.dita.base/build_preprocess_template.xml"
+                >plugins/org.dita.base/build_preprocess_template.xml</xref> --></stentry>
+            <stentry id="stentry_uzf_">dita.preprocess.mappull.param</stentry>
+          </strow>
+          <strow>
+            <stentry id="stentry_zzf_"><!-- <xref
+                href="../../distros/dita-ot-2.2.0/plugins/org.dita.base/build_preprocess_template.xml"
+                >plugins/org.dita.base/build_preprocess_template.xml</xref> --></stentry>
+            <stentry id="stentry_a1g_">dita.preprocess.conref.param</stentry>
+          </strow>
+          <strow>
+            <stentry id="stentry_e1g_"><!-- <xref
+                href="../../distros/dita-ot-2.2.0/plugins/org.dita.base/build_preprocess_template.xml"
+                >plugins/org.dita.base/build_preprocess_template.xml</xref> --></stentry>
+            <stentry id="stentry_g1g_">dita.preprocess.mapref.param</stentry>
+          </strow>
+          <strow>
+            <stentry id="stentry_k1g_"><!-- <xref
+                href="../../distros/dita-ot-2.2.0/plugins/org.dita.base/build_preprocess_template.xml"
+                >plugins/org.dita.base/build_preprocess_template.xml</xref> --></stentry>
+            <stentry id="stentry_m1g_">dita.preprocess.mapref.param</stentry>
+          </strow>
+          <strow>
+            <stentry id="stentry_q1g_"><!-- <xref
+                href="../../distros/dita-ot-2.2.0/plugins/org.dita.base/build_preprocess_template.xml"
+                >plugins/org.dita.base/build_preprocess_template.xml</xref> --></stentry>
+            <stentry id="stentry_s1g_">dita.preprocess.topicpull.param</stentry>
+          </strow>
+          <strow>
+            <stentry id="stentry_v1g_"><!-- <xref
+                href="../../distros/dita-ot-2.2.0/plugins/org.dita.base/build_preprocess_template.xml"
+                >plugins/org.dita.base/build_preprocess_template.xml</xref> --></stentry>
+            <stentry id="stentry_x1g_">dita.preprocess.flag-module.param</stentry>
+          </strow>
+          <strow>
+            <stentry id="stentry_bbg_"><!-- <xref
+                href="../../distros/dita-ot-2.2.0/plugins/org.dita.eclipsehelp/build_dita2eclipsehelp_template.xml"
+                >plugins/org.dita.eclipsehelp/build_dita2eclipsehelp_template.xml</xref> --></stentry>
+            <stentry id="stentry_dbg_">dita.conductor.eclipse.toc.param</stentry>
+          </strow>
+          <strow>
+            <stentry id="stentry_gbg_"><!-- <xref
+                href="../../distros/dita-ot-2.2.0/plugins/org.dita.pdf2/build_template.xml"
+                scope="external">plugins/org.dita.pdf2/build_template.xml</xref> --></stentry>
+            <stentry id="stentry_ibg_">dita.conductor.pdf2.param</stentry>
+          </strow>
+          <strow>
+            <stentry id="stentry_lbg_"><!-- <xref
+                href="../../distros/dita-ot-2.2.0/plugins/org.dita.xhtml/build_dita2xhtml_template.xml"
+                >plugins/org.dita.xhtml/build_dita2xhtml_template.xml</xref> --></stentry>
+            <stentry id="stentry_nbg_">dita.conductor.xhtml.toc.param</stentry>
+          </strow>
+          <strow>
+            <stentry id="stentry_tbg_"><!-- <xref
+                href="../../distros/dita-ot-2.2.0/plugins/org.dita.xhtml/build_dita2xhtml_template.xml"
+                >plugins/org.dita.xhtml/build_dita2xhtml_template.xml</xref> --></stentry>
+            <stentry id="stentry_vbg_">dita.conductor.xhtml.toc.param</stentry>
+          </strow>
+          <strow>
+            <stentry id="stentry_zbg_"><!-- <xref
+                href="../../distros/dita-ot-2.2.0/plugins/org.dita.xhtml/build_general_template.xml"
+                >plugins/org.dita.xhtml/build_general_template.xml</xref> --></stentry>
+            <stentry id="stentry_bcg_">dita.conductor.xhtml.param</stentry>
+          </strow>
+          <strow>
+            <stentry id="stentry_fcg_"><!-- <xref
+                href="../../distros/dita-ot-2.2.0/plugins/org.dita.xhtml/build_general_template.xml"
+                >plugins/org.dita.xhtml/build_general_template.xml</xref> --></stentry>
+            <stentry id="stentry_hcg_">dita.conductor.html.param</stentry>
+          </strow>
+          <strow>
+            <stentry id="stentry_kcg_"><!-- <xref
+                href="../../distros/dita-ot-2.2.0/plugins/org.dita.xhtml/build_general_template.xml"
+                >plugins/org.dita.xhtml/build_general_template.xml</xref> --></stentry>
+            <stentry id="stentry_mcg_">dita.conductor.xhtml.param</stentry>
+          </strow>
+          <strow>
+            <stentry id="stentry_qcg_"><!-- <xref
+                href="../../distros/dita-ot-2.2.0/plugins/org.dita.xhtml/build_general_template.xml"
+                >plugins/org.dita.xhtml/build_general_template.xml</xref> --></stentry>
+            <stentry id="stentry_scg_">dita.conductor.html.param</stentry>
+          </strow>
+          <strow>
+            <stentry id="stentry_vcg_"><!-- <xref
+                href="../../distros/dita-ot-2.2.0/resources/messages_template.xml "
+                >resources/messages_template.xml </xref> --></stentry>
+            <stentry id="stentry_xcg_">dita.xsl.messages</stentry>
+          </strow>
+        </simpletable>
+      </draft-comment>
+      <required-cleanup><!-- <xref
+          href="../../dita-ot/src/main/java/org/dita/dost/platform/InsertAction.java"
+          >InsertAction.java</xref> --></required-cleanup>
+    </section>
+  </refbody>
+</reference>

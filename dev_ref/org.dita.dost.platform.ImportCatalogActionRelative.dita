@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="org.dita.dost.platform.ImportCatalogActionRelative">
+  <title><codeph>org.dita.dost.platform.ImportCatalogActionRelative</codeph></title>
+  <shortdesc>
+    <draft-comment author="staylor">Include plug-in catalog content based on <xref
+        href="plugin-xmlcatalog.dita" format="dita">catalog import extension point</xref>. The
+        <xmlatt>id</xmlatt> attribute is used to define the extension point ID.</draft-comment>
+  </shortdesc>
+  <refbody>
+    <section>
+      <draft-comment author="staylor"
+        >example<codeblock>&lt;dita:extension id="dita.specialization.catalog.relative"
+                   behavior="org.dita.dost.platform.ImportCatalogActionRelative"/></codeblock>becomes<codeblock>&lt;nextCatalog catalog="plugins/org.oasis-open.dita.v1_3/catalog.xml"/>
+  &lt;nextCatalog catalog="plugins/org.oasis-open.dita.v1_2/catalog.xml"/>
+  &lt;nextCatalog catalog="plugins/org.dita.specialization.dita11/catalog.xml"/>
+  &lt;nextCatalog catalog="plugins/org.dita.specialization.eclipsemap/catalog.xml"/></codeblock></draft-comment>
+      <draft-comment author="staylor">
+        <simpletable relcolwidth="33* 33*">
+          <sthead>
+            <stentry id="stentry_fsf_">dita-ot-2.2.0 example File</stentry>
+            <stentry id="stentry_gsf_">ID</stentry>
+          </sthead>
+          <strow>
+            <stentry id="stentry_osf_"><!-- <xref
+                href="../../distros/dita-ot-2.2.0/catalog-dita_template.xml"
+                >catalog-dita_template.xml</xref> --></stentry>
+            <stentry id="stentry_psf_">dita.specialization.catalog.relative</stentry>
+          </strow>
+        </simpletable>
+      </draft-comment>
+      <required-cleanup><!--<xref
+          href="../../dita-ot/src/main/java/org/dita/dost/platform/ImportCatalogActionRelative.java"
+          >ImportCatalogActionRelative.java</xref>--></required-cleanup>
+      <p>Replaces the deprecated <codeph>InsertCatalogActionRelative</codeph>
+          behavior.<draft-comment author="staylor">
+          <lines>/**
+ * InsertCatalogActionRelative inserts the children of the root element of an XML document
+ * into a plugin extension point, rewriting relative file references so that they
+ * are still correct in their new location.
+ * 
+ * Attributes affected: (public|system|uri)/@uri
+ *   (nextCatalog|delegateURI|delegateSystem|delegatePublic)/@catalog
+ *   (rewriteSystem|rewriteURI)/@rewritePrefix
+ * To do: Handle xml:base.
+ * 
+ * @author Deborah Pickett
+ * @deprecated use {@link ImportCatalogActionRelative} instead
+ */</lines>
+        </draft-comment></p>
+    </section>
+  </refbody>
+</reference>

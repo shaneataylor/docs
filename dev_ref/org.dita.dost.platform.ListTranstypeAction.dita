@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="org.dita.dost.platform.ListTranstypeAction">
+  <title><codeph>org.dita.dost.platform.ListTranstypeAction</codeph></title>
+  <shortdesc>Lists the values supplied to the extension point in the plug-in descriptor
+    file.</shortdesc>
+  <refbody>
+    <section>
+      <p>This action expands to a text list of each value supplied to the extension point. Use the
+        optional <xmlatt>separator</xmlatt> attribute to specify a delimiter string . If omitted,
+        the pipe (|) is used.</p>
+    </section>
+    <refbodydiv
+      conref="org.dita.dost.platform.CheckTranstypeAction.dita#org.dita.dost.platform.CheckTranstypeAction/transtype_common"/>
+  </refbody>
+</reference>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><project xmlns:dita="http://dita-ot.sourceforge.net" name="extension-points" default="main">
+  
+  <path path="resources">
+    <pathelement location="${dita.dir}${file.separator}plugins/com.extension-points.defs/branding_collateral"/>
+    <!-- add processing to copy the resources defined in this path element -->
+  </path>
+  
+  <property name="availableTransforms">common-html, docbook, eclipsecontent, eclipsehelp, html5, htmlhelp, javahelp, odt, pdf, pdf2, tocjs, troff, wordrtf, xhtml</property>
+
+  <property name="brand" value=""/>
+
+  <target name="main" depends="extension-points.init">
+    <!-- targets surrounded by braces are extension points for other plugins -->
+    
+    <!--<dita:extension id="com.example.new-extensions.content"
+      behavior="org.dita.dost.platform.InsertAction"/>-->
+    
+  </target>
+  <target name="extension-points.init">
+    <antcall target="check-brand-param"/>
+  </target>
+  
+  <target name="check-brand-param">
+    <property name="message">The supplied brand must be one of: MegaWidget, SuperWidget, UltraWidget</property>
+    <fail message="${message}">
+      <condition>
+        <and><not><equals arg1="${brand}" arg2="SuperWidget" casesensitive="false"/></not><not><equals arg1="${brand}" arg2="UltraWidget" casesensitive="false"/></not><not><equals arg1="${brand}" arg2="MegaWidget" casesensitive="false"/></not></and>
+      </condition>
+    </fail>
+  </target>
+  
+  <!-- expands to the <param> elements (or whatever, I think) specified by plugins that extend this extension point -->
+  
+  <!-- 
+org.dita.dost.platform.ImportAntLibAction
+org.dita.dost.platform.ImportCatalogActionRelative
+org.dita.dost.platform.ImportPluginCatalogAction
+org.dita.dost.platform.ImportPluginInfoAction
+org.dita.dost.platform.ImportStringsAction
+org.dita.dost.platform.ImportXSLAction
+org.dita.dost.platform.InsertAction
+org.dita.dost.platform.InsertAntActionRelative
+  -->
+  
+  
+  
+</project>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="org.dita.dost.platform.InsertAntActionRelative">
+  <title><codeph>org.dita.dost.platform.InsertAntActionRelative</codeph></title>
+  <shortdesc>Include plug-in conductor content based on <xref href="plugin-anttarget.dita"
+      format="dita">relative Ant import extension point</xref>. The <xmlatt>id</xmlatt> attribute is
+    used to define the extension point ID.</shortdesc>
+  <refbody>
+    <section>
+      <draft-comment author="staylor">
+        <simpletable relcolwidth="33* 33*">
+          <sthead>
+            <stentry id="stentry_k35_">dita-ot-2.2.0 example File</stentry>
+            <stentry id="stentry_l35_">ID</stentry>
+          </sthead>
+          <strow>
+            <stentry id="stentry_hj5_"><!-- <xref href="../../distros/dita-ot-2.2.0/build_template.xml"
+              scope="external">build_template.xml</xref> --></stentry>
+            <stentry id="stentry_jj5_">dita.conductor.target.relative</stentry>
+          </strow>
+        </simpletable>
+      </draft-comment>
+      <required-cleanup><!-- <xref
+          href="../../dita-ot/src/main/java/org/dita/dost/platform/InsertAntActionRelative.java"
+          >InsertAntActionRelative.java</xref> --></required-cleanup>
+    </section>
+  </refbody>
+</reference>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<reference id="plugin-newextensions-example">
+  <title>Example plug-in defining new extension points</title>
+  <shortdesc>
+    <required-cleanup>The following plug-in defines <filepath>myBuildFile_template.xml</filepath> as
+      a new template for extensions, and two new extension points.</required-cleanup>
+  </shortdesc>
+  <refbody>
+    <example>
+      <title><filepath>plugin.xml</filepath></title>
+      <codeblock><coderef href="../samples/plugins/com.example.new-extensions/plugin.xml"/></codeblock>
+    </example>
+    <example>
+      <title><filepath>myBuild_template.xml</filepath></title>
+      <codeblock><coderef href="../samples/plugins/com.example.new-extensions/myBuild_template.xml"/></codeblock>
+    </example>
+    <example>
+      <title>Generated <filepath>myBuild.xml</filepath></title>
+      <draft-comment author="staylor">created/updated when plug-ins are installed or removed. This
+        file might be different after a new plug-in uses its extension points to add or override
+          processing<p>When the integrator runs, this will be used to recreate
+            <filepath>myBuildFile.xml</filepath>, replacing Ant file content based on extension
+          point use.</p></draft-comment>
+    </example>
+  </refbody>
+</reference>

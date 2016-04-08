@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<task id="plugin-newextensions-processing">
+    <title></title>
+    <shortdesc/>
+    <taskbody>
+        <context>
+      <note>You can define the same extension point with multiple behaviors; this can be useful when
+        all behaviors need to use the same input values.<draft-comment author="staylor"> example.
+          conref this elsewhere?</draft-comment></note>
+      <p/>
+      <required-cleanup>
+        <parml>
+          <plentry>
+            <pt><codeph>org.dita.dost.platform.CheckTranstypeAction</codeph></pt>
+            <pd>Create Ant condition elements to check if the <codeph>${transtype}</codeph> property
+              value equals a supported transformation type value.</pd>
+          </plentry>
+          <plentry>
+            <pt><codeph>org.dita.dost.platform.ImportAntLibAction</codeph></pt>
+            <pd>Create Ant <xmlelement>pathelement</xmlelement> elements for <xref
+                href="plugin-javalib.dita" format="dita">library imported extension point</xref>.
+              The <xmlatt>id</xmlatt> attribute is used to define the extension point ID.</pd>
+          </plentry>
+          <plentry>
+            <pt><codeph>org.dita.dost.platform.ImportPluginCatalogAction</codeph></pt>
+            <pd>Include plug-in metadata catalog content.</pd>
+          </plentry>
+          <plentry>
+            <pt><codeph>org.dita.dost.platform.ImportPluginInfoAction</codeph></pt>
+            <pd>Create plug-in metadata Ant properties.</pd>
+          </plentry>
+          <plentry>
+            <pt><codeph>org.dita.dost.platform.ImportStringsAction</codeph></pt>
+            <pd>Include plug-in string file content base on <xref
+                href="plugin-addgeneratedtext.dita" format="dita">generated text extension
+                point</xref>. The <xmlatt>id</xmlatt> attribute is used to define the extension
+              point ID.</pd>
+          </plentry>
+          <plentry>
+            <pt><codeph>org.dita.dost.platform.ImportXSLAction</codeph></pt>
+            <pd>Create <xmlelement>xsl:import</xmlelement> elements based on <xref
+                href="plugin-overridestyle.dita">XSLT import extension point</xref>. The
+                <xmlatt>id</xmlatt> attribute is used to define the extension point ID.</pd>
+          </plentry>
+          <plentry>
+            <pt><codeph>org.dita.dost.platform.InsertAction</codeph></pt>
+            <pd>Include plug-in conductor content based on <xref href="plugin-anttarget.dita"
+                format="dita">Ant import extension point</xref>. The <codeph>id</codeph> attribute
+              is used to define the extension point ID.</pd>
+          </plentry>
+          <plentry>
+            <pt><codeph>org.dita.dost.platform.InsertAntActionRelative</codeph></pt>
+            <pd>Include plug-in conductor content based on <xref href="plugin-anttarget.dita"
+                format="dita">relative Ant import extension point</xref>. The <xmlatt>id</xmlatt>
+              attribute is used to define the extension point ID.</pd>
+          </plentry>
+          <plentry>
+            <pt><codeph>org.dita.dost.platform.InsertCatalogActionRelative</codeph></pt>
+            <pd>Include plug-in catalog content based on <xref href="plugin-xmlcatalog.dita"
+                format="dita">catalog import extension point</xref>. The <xmlatt>id</xmlatt>
+              attribute is used to define the extension point ID.</pd>
+          </plentry>
+          <plentry>
+            <pt><codeph>org.dita.dost.platform.ListTranstypeAction</codeph></pt>
+            <pd>Create a pipe delimited list of supported transformation types.</pd>
+          </plentry>
+        </parml>
+      </required-cleanup>
+    </context>
+    </taskbody>
+</task>

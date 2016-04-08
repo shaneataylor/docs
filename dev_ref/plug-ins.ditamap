@@ -7,8 +7,8 @@
   <topicref href="plugin-creating.dita">
     <topicref href="plugins-overview.dita">
       <topicref href="plugin-benefits.dita"/>
-      <topicref href="plugin-configfile.dita"/>
-      <topicref href="plugin-dependencies.dita"/>
+      <topicref href="plugin-configfile.dita" keys="plug-in-descriptor"/>
+      <topicref href="plugin-dependencies.dita" keys="plug-in-dependencies"/>
     </topicref>
     <topicref href="plugin-xmlcatalog.dita"/>
     <topicref href="plugin-anttarget.dita"/>
@@ -20,7 +20,27 @@
     <topicref href="plugin-xsltparams.dita"/>
     <topicref href="plugin-javalib.dita"/>
     <topicref href="plugin-messages.dita"/>
-    <topicref href="plugin-newextensions.dita"/>
+    <topicref href="plugin-newextensions.dita">
+      <topicref href="plugin-newextensions-processing.dita">
+        <topicref href="dita-extension-element.dita"/>
+      </topicref>
+      <topicref href="plugin-newextensions-future-dependencies.dita"/>
+      <topicref href="plugin-newextensions-behaviors.dita">
+        <topicref href="org.dita.dost.platform.CheckTranstypeAction.dita"
+          keys="org.dita.dost.platform.CheckTranstypeAction"/>
+        <topicref href="org.dita.dost.platform.ImportAntLibAction.dita" keys="org.dita.dost.platform.ImportAntLibAction"/>
+        <topicref href="org.dita.dost.platform.ImportCatalogActionRelative.dita" keys="org.dita.dost.platform.ImportCatalogActionRelative"/>
+        <topicref href="org.dita.dost.platform.ImportPluginCatalogAction.dita" keys="org.dita.dost.platform.ImportPluginCatalogAction"/>
+        <topicref href="org.dita.dost.platform.ImportPluginInfoAction.dita" keys="org.dita.dost.platform.ImportPluginInfoAction"/>
+        <topicref href="org.dita.dost.platform.ImportStringsAction.dita" keys="org.dita.dost.platform.ImportStringsAction"/>
+        <topicref href="org.dita.dost.platform.ImportXSLAction.dita" keys="org.dita.dost.platform.ImportXSLAction"/>
+        <topicref href="org.dita.dost.platform.InsertAction.dita" keys="org.dita.dost.platform.InsertAction"/>
+        <topicref href="org.dita.dost.platform.InsertAntActionRelative.dita" keys="org.dita.dost.platform.InsertAntActionRelative"/>
+        <topicref href="org.dita.dost.platform.ListTranstypeAction.dita"
+          keys="org.dita.dost.platform.ListTranstypeAction"/>
+      </topicref>
+      <topicref href="plugin-newextensions-example.dita" locktitle="yes" navtitle="Example"/>
+    </topicref>
     <topicref href="plugin-sample.dita"/>
   </topicref>
 
@@ -35,7 +55,7 @@
 
   <reltable title="Source and target links">
     <relheader>
-      <relcolspec linking="sourceonly"/>
+      <relcolspec/>
       <relcolspec linking="targetonly"/>
     </relheader>
     <relrow>
@@ -104,10 +124,125 @@
     </relrow>
     <relrow>
       <relcell>
+        <topicref href="org.dita.dost.platform.CheckTranstypeAction.dita"/>
+        <topicref href="org.dita.dost.platform.ImportAntLibAction.dita"/>
+        <topicref href="org.dita.dost.platform.ImportCatalogActionRelative.dita"/>
+        <topicref href="org.dita.dost.platform.ImportPluginCatalogAction.dita"/>
+        <topicref href="org.dita.dost.platform.ImportPluginInfoAction.dita"/>
+        <topicref href="org.dita.dost.platform.ImportStringsAction.dita"/>
+        <topicref href="org.dita.dost.platform.ImportXSLAction.dita"/>
+        <topicref href="org.dita.dost.platform.InsertAction.dita"/>
+        <topicref href="org.dita.dost.platform.InsertAntActionRelative.dita"/>
+        <topicref href="org.dita.dost.platform.ListTranstypeAction.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="plugin-configfile.dita" keyref="plug-in-descriptor"/>
+      </relcell>
+    </relrow>
+  </reltable>
+  <reltable title="Two-way links">
+    <relheader>
+      <relcolspec/>
+      <relcolspec/>
+    </relheader>
+    <relrow>
+      <relcell>
         <topicref href="plugin-configfile.dita"/>
       </relcell>
       <relcell>
         <topicref href="plugin-newextensions.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="org.dita.dost.platform.CheckTranstypeAction.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="org.dita.dost.platform.ListTranstypeAction.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="org.dita.dost.platform.ImportAntLibAction.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="plugin-javalib.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="org.dita.dost.platform.ImportCatalogActionRelative.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="plugin-xmlcatalog.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="org.dita.dost.platform.ImportPluginCatalogAction.dita"/>
+      </relcell>
+      <relcell/>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="org.dita.dost.platform.ImportPluginInfoAction.dita"/>
+      </relcell>
+      <relcell/>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="org.dita.dost.platform.ImportStringsAction.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="plugin-addgeneratedtext.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="org.dita.dost.platform.ImportXSLAction.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="plugin-overridestyle.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="org.dita.dost.platform.InsertAction.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="plugin-anttarget.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="org.dita.dost.platform.InsertAntActionRelative.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="plugin-anttarget.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="org.dita.dost.platform.ImportCatalogActionRelative.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="org.dita.dost.platform.ImportPluginCatalogAction.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="org.dita.dost.platform.ImportPluginCatalogAction.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="org.dita.dost.platform.InsertAction.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="org.dita.dost.platform.InsertAction.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="org.dita.dost.platform.ImportCatalogActionRelative.dita"/>
       </relcell>
     </relrow>
   </reltable>

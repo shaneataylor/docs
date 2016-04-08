@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<reference id="dita-extension-element">
+  <title><xmlelement>dita:extension</xmlelement> element</title>
+  <shortdesc>Use the <xmlelement>dita:extension</xmlelement> element to insert generated content
+    during the integration process. </shortdesc>
+  <refbody>
+    <section>
+      <p>There are two required attributes:</p>
+      <parml>
+        <plentry>
+          <pt><xmlatt>id</xmlatt></pt>
+          <pd>The extension point ID.</pd>
+        </plentry>
+        <plentry>
+          <pt><xmlatt>behavior</xmlatt></pt>
+          <pd>Defines which processing action is used.<p>Supported values for the
+                <xmlatt>behavior</xmlatt> attribute:</p></pd>
+        </plentry>
+      </parml>
+    </section>
+  </refbody>
+</reference>

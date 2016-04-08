@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="com.extension-points.defs">
+  
+  <!-- Define the extension points -->
+  <extension-point id="com.extension-points.defs.pre" name="Custom target preprocess"/>
+  <extension-point id="com.extension-points.defs.content" name="Custom target content"/>
+  
+  <extension-point id="com.extension-points.defs.brands" name="Brand parameter values"/>
+  <feature extension="com.extension-points.defs.brands" value="SuperWidget,UltraWidget"/>
+  <feature extension="com.extension-points.defs.brands" value="MegaWidget"/>
+  
+  <extension-point id="com.extension-points.defs.resources" name="Resource files to copy"/>
+  <feature extension="com.extension-points.defs.resources" file="plugins/com.extension-points.defs/branding_collateral"/>
+  
+  <!-- Parameters -->
+  <extension-point id="com.extension-points.defs.params" name=""/>
+  
+  
+  <transtype name="conversion" desc="Convert units" extends="base" abstract="true">
+    <param name="units.output" desc="Target system of units for output." type="enum">
+      <val>US</val>
+      <val default="true">metric</val>
+    </param>
+  </transtype>
+  
+  <feature extension="dita.conductor.target.relative" file="conductor.xml"/>
+  
+  <template file="build_template.xml"/>
+  
+</plugin>
