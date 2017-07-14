@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "subjectScheme.dtd"> 
+<subjectScheme>
+  <title>Indexing Taxonomy</title>
+  <subjectHead>
+    <subjectHeadMeta>
+      <navtitle>Tasks</navtitle>
+    </subjectHeadMeta>
+    <subjectdef keys="build">
+      <topicmeta>
+        <linktext>build</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="create">
+      <topicmeta>
+        <linktext>create</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="customize">
+      <topicmeta>
+        <linktext>customize</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="delete">
+      <topicmeta>
+        <linktext>delete</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="distribute">
+      <topicmeta>
+        <linktext>distribute</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="embed">
+      <topicmeta>
+        <linktext>embed</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="install">
+      <topicmeta>
+        <linktext>install</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="i18n">
+      <topicmeta>
+        <linktext>translate</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="troubleshoot">
+      <topicmeta>
+        <linktext>troubleshoot</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="uninstall">
+      <topicmeta>
+        <linktext>uninstall</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="upgrade">
+      <topicmeta>
+        <linktext>upgrade</linktext>
+      </topicmeta>
+    </subjectdef>
+  </subjectHead>
+  <subjectHead>
+    <subjectHeadMeta>
+      <navtitle>Objects</navtitle>
+    </subjectHeadMeta>
+    <subjectdef keys="filter">
+      <topicmeta>
+        <linktext>DITAVAL filter</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="map">
+      <topicmeta>
+        <linktext>DITA map</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="topic">
+      <topicmeta>
+        <linktext>DITA topic</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="dita-ot">
+      <topicmeta>
+        <linktext>DITA Open Toolkit</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="plugin">
+      <topicmeta>
+        <linktext>plugin</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="build-log">
+      <topicmeta>
+        <linktext>build log</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="message">
+      <topicmeta>
+        <linktext>message</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="pdf">
+      <topicmeta>
+        <linktext>PDF</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="html5">
+      <topicmeta>
+        <linktext>HTML5</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="xhtml">
+      <topicmeta>
+        <linktext>XHTML</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="eclipse">
+      <topicmeta>
+        <linktext>Eclipse</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="chm">
+      <topicmeta>
+        <linktext>Microsoft HTML help</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="dita-spec">
+      <topicmeta>
+        <linktext>DITA specification</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="toc">
+      <topicmeta>
+        <linktext>table of contents</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="index">
+      <topicmeta>
+        <linktext>index</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="frontmatter">
+      <topicmeta>
+        <linktext>frontmatter</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="cover">
+      <topicmeta>
+        <linktext>cover</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="backmatter">
+      <topicmeta>
+        <linktext>backmatter</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="font">
+      <topicmeta>
+        <linktext>font</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="color">
+      <topicmeta>
+        <linktext>color</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="style">
+      <topicmeta>
+        <linktext>style</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="artwork">
+      <topicmeta>
+        <linktext>artwork</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="image" keyref="artwork">
+      <topicmeta>
+        <linktext>image</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="java">
+      <topicmeta>
+        <linktext>Java</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="windows">
+      <topicmeta>
+        <linktext>Windows</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="linux">
+      <topicmeta>
+        <linktext>Linux</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="macos">
+      <topicmeta>
+        <linktext>MacOS</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="ant">
+      <topicmeta>
+        <linktext>ant</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="fop">
+      <topicmeta>
+        <linktext>Apache FOP</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="ahf">
+      <topicmeta>
+        <linktext>Antenna House Formatter</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="xep">
+      <topicmeta>
+        <linktext>RenderX XEP</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="xslt">
+      <topicmeta>
+        <linktext>XSLT</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="xsl-fo">
+      <topicmeta>
+        <linktext>XSL-FO</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="css">
+      <topicmeta>
+        <linktext>CSS</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="page-numbering">
+      <topicmeta>
+        <linktext>page numbering</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="list-numbering">
+      <topicmeta>
+        <linktext>list numbering</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="processing-steps">
+      <topicmeta>
+        <linktext>processing steps</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="preprocessing">
+      <topicmeta>
+        <linktext>preprocessing</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="postprocessing">
+      <topicmeta>
+        <linktext>postprocessing</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="param">
+      <topicmeta>
+        <linktext>build parameter</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="arg">
+      <topicmeta>
+        <linktext>command argument</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="xref">
+      <topicmeta>
+        <linktext>link</linktext>
+      </topicmeta>
+    </subjectdef>
+  </subjectHead>
+  <subjectHead>
+    <subjectHeadMeta>
+      <navtitle>User Role</navtitle>
+    </subjectHeadMeta>
+    <subjectdef keys="author">
+      <topicmeta>
+        <linktext>author</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="builder">
+      <topicmeta>
+        <linktext>builder</linktext>
+      </topicmeta>
+    </subjectdef>
+    <subjectdef keys="developer">
+      <topicmeta>
+        <linktext>developer</linktext>
+      </topicmeta>
+    </subjectdef>
+  </subjectHead>
+</subjectScheme>
